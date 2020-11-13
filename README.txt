@@ -10,4 +10,6 @@ If you do not wish to use the provided SQL file, please change the password fiel
 
 If you do not wish to use the provided SQL file, user courses must be added manually so that user courses can be populated from the web app.
 
+Do not change the names of the directories
+
 
