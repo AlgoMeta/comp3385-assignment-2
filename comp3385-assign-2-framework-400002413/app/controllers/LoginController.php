@@ -8,8 +8,10 @@
             $this->getView()->setTemplate("../../comp3385-assign-2-framework-400002413/tpl/login.tpl.php");
             $this->getSessionManager()->create();
 
-            if (!$this->getSessionManager()->accessible($_SESSION["user"], "login")) {
-                header("Location: index.php?controller=Profile");
+            if (isset($_SESSION["user"])) {
+                if (!$this->getSessionManager()->accessible($_SESSION["user"], "login")) {
+                    header("Location: index.php?controller=Profile");
+                }
             }
 
             if ($_SERVER["REQUEST_METHOD"] === "POST") {

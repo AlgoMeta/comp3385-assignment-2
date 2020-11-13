@@ -3,9 +3,11 @@
         public function run():void {
 			$this->getSessionManager()->create();
 
-            if (!$this->getSessionManager()->accessible($_SESSION["user"], "login")) {
-                header("Location: index.php?controller=Profile");
-			}
+            if (isset($_SESSION["user"])) {
+                if (!$this->getSessionManager()->accessible($_SESSION["user"], "login")) {
+                    header("Location: index.php?controller=Profile");
+                }
+            }
 			
         	if ($_SERVER["REQUEST_METHOD"] == "POST") {
         		$fullName = $this->commandContext->get("fullname");
