@@ -25,7 +25,7 @@
                     $this->getResponseHandler()->getLogResponse()->setData("Logger", "Courses unsuccessfully visited");
                     $this->getSessionManager()->create();
                     $this->getSessionManager()->add("Response Handler", $this->getResponseHandler());
-                    header("Location: index.php");
+                    header("Location: index.php?controller=Login");
                 }
             } else {
                 $this->getResponseHandler()->getHeader()->setData("Header", "Error");
@@ -33,7 +33,7 @@
                 $this->getResponseHandler()->getLogResponse()->setData("Logger", "Courses unsuccessfully visited");
                 $this->getSessionManager()->create();
                 $this->getSessionManager()->add("Response Handler", $this->getResponseHandler());
-                header("Location: index.php");
+                header("Location: index.php?controller=Login");
             }
         }
     }
