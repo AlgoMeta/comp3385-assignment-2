@@ -1,12 +1,15 @@
 <?php
+    use Framework\Controller;
+    use Framework\View;
+    
     class CoursesController extends Controller{
         public function run():void{
             $this->setModel(new CourseModel());
             $this->setView(new View());
-            SessionManager::create();
+            $this->getSessionManager()->create();
 
             if (isset($_SESSION["user"])) {
-                if(SessionManager::accessible($_SESSION["user"], "courses")) {
+                if($this->getSessionManager()->accessible($_SESSION["user"], "courses")) {
                     $this->getModel()->makeConnection();
                     $this->getView()->setTemplate("../../comp3385-assign-2-framework-400002413/tpl/courses.tpl.php");
                     $this->getView()->addVar("courses", $this->getModel()->findCourses());

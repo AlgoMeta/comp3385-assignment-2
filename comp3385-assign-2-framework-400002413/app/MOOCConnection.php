@@ -1,4 +1,7 @@
 <?php 
+
+	use Framework\DatabaseConnection;
+	
 	class MOOCConnection extends DatabaseConnection {
 		
 		function __construct() {

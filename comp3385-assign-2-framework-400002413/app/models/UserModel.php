@@ -1,4 +1,7 @@
 <?php
+    use Framework\Model;
+    use Framework\SessionManager;
+    
     class UserModel extends Model{
         public function makeConnection():void {
             $moocConnection = new MOOCConnection();

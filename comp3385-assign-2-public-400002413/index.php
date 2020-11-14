@@ -1,5 +1,7 @@
 <?php
-    require "../../comp3385-assign-2-framework-400002413/autoloader.php";
+    use Framework\FrontController;
+
+    require_once "../../comp3385-assign-2-framework-400002413/autoloader.php";
 
     $frontController = new FrontController();
 

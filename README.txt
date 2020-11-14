@@ -1,6 +1,6 @@
-In order to run this project place the comp3385-assign-2-public-400002413 folder in your htdocs directory.
+In order to run this project place the comp3385-assign-2-public-400002413 folder in your htdocs/www directory.
 
-In order to run this project place the comp3385-assign-2-framework-400002413 folder outside your htdocs directory.
+In order to run this project place the comp3385-assign-2-framework-400002413 folder outside your htdocs/www directory.
 
 The Test User from assignment 1 has been added to the database.
 
@@ -11,5 +11,3 @@ If you do not wish to use the provided SQL file, please change the password fiel
 If you do not wish to use the provided SQL file, user courses must be added manually so that user courses can be populated from the web app.
 
 Do not change the names of the directories
-
-

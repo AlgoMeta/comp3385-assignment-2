@@ -1,4 +1,7 @@
 <?php
+    use Framework\Controller;
+    use Framework\View;
+    
     class StreamsController extends Controller{
         public function run():void{
             $this->setModel(new StreamModel());

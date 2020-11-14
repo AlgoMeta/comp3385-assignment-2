@@ -1,7 +1,9 @@
 <?php
+	use Framework\Command;
+	use Framework\CommandContext;
+	use Framework\SessionManager;
 	
-	class LogoutCommand extends Command
-	{
+	class LogoutCommand extends Command {
 		function __construct() {
 			$this->controller = null;
 		}

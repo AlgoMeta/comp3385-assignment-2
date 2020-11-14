@@ -1,6 +1,8 @@
 <?php
     spl_autoload_register(function ($class) {
         $path = __DIR__ . "/";
+        $parts = explode('\\', $class);
+        $class = $parts[count($parts) - 1];
         
         $requiredClasses = array(
             "app-commands" =>  $path . "app/commands/" . $class . ".php",
@@ -14,7 +16,7 @@
 
         foreach ($requiredClasses as $name => $class) {
             if (file_exists($class)) {
-                require $class;
+                require_once $class;
             }
         }
     });

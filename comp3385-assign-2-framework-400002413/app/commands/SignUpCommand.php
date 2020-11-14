@@ -1,7 +1,8 @@
 <?php
-	
-	class SignUpCommand extends Command
-	{
+	use Framework\Command;
+	use Framework\CommandContext;
+
+	class SignUpCommand extends Command {
 		function __construct() {
 			$this->controller = new SignUpController();
 		}

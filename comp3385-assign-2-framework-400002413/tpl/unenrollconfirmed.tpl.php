@@ -1,3 +1,7 @@
+<?php
+	use Framework\SessionManager;
+?>
+
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>

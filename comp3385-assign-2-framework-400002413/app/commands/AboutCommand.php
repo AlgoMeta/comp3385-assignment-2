@@ -1,7 +1,9 @@
 <?php
 	
-	class AboutCommand extends Command
-	{
+	use Framework\Command;
+	use Framework\CommandContext;
+	
+	class AboutCommand extends Command {
 		function __construct() {
 			$this->controller = null;
 		}

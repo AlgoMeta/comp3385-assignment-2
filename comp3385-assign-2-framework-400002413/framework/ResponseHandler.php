@@ -1,4 +1,7 @@
 <?php
+
+	namespace Framework;
+	
 	class ResponseHandler {
 		private $responseHeader;
 		private $state;

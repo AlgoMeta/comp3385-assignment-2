@@ -1,7 +1,8 @@
 <?php
+	use Framework\Command;
+	use Framework\CommandContext;
 	
-	class StreamsCommand extends Command
-	{
+	class StreamsCommand extends Command {
 		function __construct() {
 			$this->controller = new StreamsController();
 		}

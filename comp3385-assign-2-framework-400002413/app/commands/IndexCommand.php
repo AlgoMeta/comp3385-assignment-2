@@ -1,7 +1,8 @@
 <?php
+	use Framework\Command;
+	use Framework\CommandContext;
 	
-	class IndexCommand extends Command
-	{
+	class IndexCommand extends Command {
 		function __construct() {
 			$this->controller = new IndexController();
 		}

@@ -1,4 +1,6 @@
 <?php
+    use Framework\Model;
+    
     class CourseModel extends Model {
 
         public function makeConnection():void {

@@ -1,4 +1,7 @@
 <?php
+
+	namespace Framework;
+	
 	abstract class DatabaseConnection {
 		protected $servername;
 		protected $username;

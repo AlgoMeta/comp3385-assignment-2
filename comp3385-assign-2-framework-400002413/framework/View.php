@@ -1,5 +1,7 @@
 <?php
 
+    namespace Framework;
+
     class View {
         private $tpl;
         private $vars;

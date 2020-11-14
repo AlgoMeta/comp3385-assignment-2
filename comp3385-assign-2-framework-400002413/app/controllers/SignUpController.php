@@ -1,4 +1,7 @@
 <?php
+	use Framework\Controller;
+    use Framework\View;
+	
     class SignUpController extends Controller{
         public function run():void {
 			$this->getSessionManager()->create();
