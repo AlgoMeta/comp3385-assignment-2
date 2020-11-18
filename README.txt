@@ -10,4 +10,6 @@ If you do not wish to use the provided SQL file, please change the password fiel
 
 If you do not wish to use the provided SQL file, user courses must be added manually so that user courses can be populated from the web app.
 
+In order to run the SessionManagerTest use the --stderr option. For example, "phpunit --testdox --stderr SessionManagerTest.php"
+
 Do not change the names of the directories
