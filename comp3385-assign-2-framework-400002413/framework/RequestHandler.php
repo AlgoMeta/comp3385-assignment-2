@@ -26,5 +26,9 @@
 			$commandClass = new $command();
 			$commandClass->execute(new CommandContext());
 		}
+
+		public function getRoutes():array {
+			return $this->routes;
+		}
 	}
 ?>

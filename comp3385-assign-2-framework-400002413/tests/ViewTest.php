@@ -1,13 +1,14 @@
 <?php
-    require "../framework/autoloader.php";
+    require "../autoloader.php";
 
+    use Framework\View;
     use PHPUnit\Framework\TestCase;
 
     class ViewTest extends TestCase{
 
         public function testViewIsValid(){
             $tmpView = new View();
-            $this->assertInstanceOf('View', $tmpView);
+            $this->assertInstanceOf('Framework\View', $tmpView);
         }
 
         public function testSetTemplate(){
@@ -15,18 +16,6 @@
             $fileName = "test.tpl.php";
             $tmpView->setTemplate($fileName);
             $this->assertEquals($tmpView->getTpl(), $fileName);
-        }
-
-        public function testDisplay(){
-            $this->assertEquals(1,1);
-        }
-
-        public function testAddVar(){
-            $tmpView = new View();
-            $fileName = "test.tpl.php";
-            $tmpView->setTemplate($fileName);
-            $tmpView->addVar("name", "John Doe");
-            $this->assertEquals($tmpView->getVars()["name"], "John Doe");
         }
     }
 ?>
